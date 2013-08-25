@@ -194,6 +194,7 @@
 -->
     
     <!-- #12 -->
+<!--
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-header">
             <button class="navbar-toggle" data-toggle="collapse" data-target=".target">
@@ -214,8 +215,96 @@
             </ul>
         </div>
     </nav>
-
+-->
+    
+    <!-- #13 -->
+<!--
+    <div class="container" style="padding:20px 0;">
+        <p>Product A <span class="label label-primary">New</span></p>
+        <p>Inbox <span class="badge">5</span></p>
+        <p>Inbox <span class="badge"></span></p>
+        
+        <div class="alert alert-info">
+            <button class="close" data-dismiss="alert">&times;</button>
+            お知らせ
+        </div>
+        
+        <div class="panel panel-primary">
+            <div class="panel-heading">お知らせ</div>
+            <div class="panel-body">こんにちは</div>
+        </div>
+    </div>
+-->
+    
+    <!-- #14 -->
+<!--
+    <div class="container" style="padding:20px 0;">
+        <div class="progress">
+            <div class="progress-bar progress-bar-primary" style="width:60%;"></div>
+        </div>
+        <div class="progress progress-striped active">
+            <div class="progress-bar progress-bar-info" style="width:60%;"></div>
+        </div>
+        <div class="progress progress-striped active">
+            <div class="progress-bar progress-bar-info" style="width:40%;"></div>
+            <div class="progress-bar progress-bar-warning" style="width:30%;"></div>
+            <div class="progress-bar progress-bar-priamry" style="width:20%;"></div>
+        </div>
+    </div>
+-->
+    
+    <!-- #15 -->
+<!--
+    <div class="container" style="padding:20px 0;">
+        <a href="#myModal" class="btn btn-primary" data-toggle="modal">Show me!</a>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">My modal</h4>
+                    </div>
+                    <div class="modal-body">
+                        こんにちは！
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    
+    <!-- #16 -->
+<!--
+    <div class="container" style="padding:20px 0;">
+        <ul class="nav nav-tabs" style="margin-bottom:15px;">
+            <li class="active"><a href="#menu1" data-toggle="tab">Menu1</a></li>
+            <li><a href="#menu2" data-toggle="tab">Menu2</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="menu1">めにゅー1</div>
+            <div class="tab-pane" id="menu2">めにゅー2</div>
+        </div>
+    </div>
+-->
+    
+    <!-- #17 -->
+    <div class="container" style="padding:20px 0;">
+        <p><a href="" data-toggle="tooltip" title="説明">this</a> and <a href="#" data-toggle="popover" title="説明" data-content="さらに説明">that</a>.</p>
+    </div>
+    
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(function() {
+        // #17
+        $("[data-toggle=tooltip]").tooltip({
+          placement: 'bottom'
+        });
+        $("[data-toggle=popover]").popover();
+      });
+    </script>
   </body>
 </html>
